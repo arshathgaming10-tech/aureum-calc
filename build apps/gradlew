@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# Lightweight gradlew - attempts to use system gradle if available
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if command -v gradle >/dev/null 2>&1; then
+  gradle "$@"
+else
+  echo "Gradle is not installed. Please install Gradle or open the project in Android Studio to generate the wrapper."
+  exit 1
+fi

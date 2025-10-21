@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Aureum.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/ic_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Aureum</item>
+    </style>
+
+    <style name="Theme.Aureum" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+</resources>
+
